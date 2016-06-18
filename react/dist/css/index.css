@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0;
+}
+
+/*home*/
+.home {
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.home img {
+  width: 100%;
+}
+
+.home .qrcode-wrap {
+  display: inline-block;
+  width: 50%;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.home .qrcode-wrap img {
+  width: 186px;
+  padding-bottom: 35px;
+}
+
+.home .qrcode-wrap:first-child {
+  margin-left: -2px;
+  border-right: 1px solid #ABAAAA;
+}
+
+.home .qrcode-wrap:last-child {
+  float: right;
+  border-left: 1px solid #ABAAAA;
+}
+
+/*tab*/
+.tab {
+  display: inline-block;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 2px solid #F41469;
+}
+
+.tab .logo {
+  width: 130px;
+  margin-left: 10.13%;
+}
+
+.tab ul {
+  display: inline-block;
+  float: right;
+  margin-right: 10.13%;
+  list-style: none;
+}
+
+.tab ul li {
+  display: inline-block;
+  padding: 0 16px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.tab ul li.active {
+  color: #F41469;
+}
+
+.tab ul li .merchant {
+  padding: 10px 8px;
+  border-radius: 4px;
+  background-color: #F41469;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

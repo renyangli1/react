@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0;
+}
+
+@import './global';
+/*home*/
+@import './home/home';
+/*tab*/
+@import './tab/tab';
+
