@@ -1,0 +1,33 @@
+.ticket-product {
+    background-color: $white-color;
+    padding: 0.16rem 0.3rem 0.3rem 0.3rem;
+    img {
+        border-radius: 0.08rem;
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .product-info {
+        font-size: $font-small;
+        float: right;
+        width: 70%;
+        height: 1.4rem;
+        border-bottom: $SplitLine;
+        .product-name {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: $primary-color;
+            margin-top: 0.2rem;
+        }
+        .price-num {
+            margin-top: 0.5rem;
+            color: $secondary-color;
+        }
+        .price {
+            color: $blue-text-color;
+        }
+        .num {
+            float: right;
+        }
+    }
+}

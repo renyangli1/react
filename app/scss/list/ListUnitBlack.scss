@@ -1,0 +1,90 @@
+.list-unit-black-ul {
+    background-color: $brown-color;
+    height: 0.96rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    margin: 0;
+    padding: 0;
+    .unit-black-li{
+        width: 33%;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: right;
+        color: $grey-active-color;
+        &>div:nth-child(1) {
+            margin-top: 0.24rem;
+            display: block;
+            font-size: $font-xsmall;
+
+        }
+        &>div:nth-child(2) {
+            margin-top: 0.06rem;
+            display: block;
+            font-size: $font-small;
+            color: $fore-color;
+        }
+        .u-name,
+        .u-time {
+            text-align: left;
+        }
+        div.u-name {
+            color: $fore-color;
+            font-size: $font-media;
+        }
+        div.u-time {
+            color: $grey-active-color;
+            font-size: $font-xsmall;
+        }
+    }
+    .icon-unit-black-left {
+        width: 1.14rem;
+        line-height: 0.96rem;
+        color: $brown-color;
+        div {
+            margin: 0.16rem 0 0 0.24rem;
+            font-size: $font-large;
+            overflow: hidden;
+            height: 0.96rem;
+            .portrait_1 {
+                display: inline-block;
+                width: 0.64rem;
+                height: 0.64rem;
+                border-radius: 0.32rem;
+            }
+        }
+    }
+    .icon-unit-black-right {
+        width: 0.88rem;
+        line-height: 0.96rem;
+        height: 0.96rem;
+        overflow: hidden;
+        div {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.44rem;
+            padding: 0;
+            margin-left: 0.24rem;
+            margin-top: 0.22rem;
+            border-radius: 0.11rem;
+            span {
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                background-image: url(../img/icon_next_white.png);
+                margin-top: 0.12rem;
+                margin-left: 0.12rem;
+            }
+        }
+    }
+}
+.ul-unit-black{
+    background-color: $brown-color;
+    overflow: hidden;
+}
+.unit-black-split-line{
+    margin-left: 1.14rem;
+    height: 1px;
+    border-top:1px solid $secondary-color;
+}

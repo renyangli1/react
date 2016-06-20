@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>行政端</title>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+    <meta name="keywords" content="行政端">
+    <meta name="description" content="行政端">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="css/index.css" rel="stylesheet" />
+    <script>
+    (function() {
+        var scale = 1.0;
+        var ratio = 1;
+        if (window.devicePixelRatio >= 2) {
+            scale *= 0.5;
+            ratio *= 2;
+        }
+        var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+        window.ratio=ratio;
+        document.write(text);
+        document.documentElement.style.fontSize = 50 * ratio + "px";
+        document.write = function() {};
+    })();
+    </script>
+</head>
+<!--<body>-->
+
+<body>
+    <div id="app"></div>
+    <script src="js/lib.js" type="text/javascript"></script>
+    <script src="cfg.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+<!--</body>-->
+
+</html>
+<!--</html>-->

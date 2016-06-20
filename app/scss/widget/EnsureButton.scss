@@ -1,0 +1,16 @@
+.view-btn-ensure {
+    padding: 0.12rem 1rem 0.12rem 1rem;
+    background-color: $white-color;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .btn-ensure {
+        height: 0.72rem;
+        background-color: $blue-color;
+        color: #FFFFFF;
+        border: none;
+        font-size: $font-large;
+        width: 100%;
+        border-radius: 0.08rem;
+    }
+}

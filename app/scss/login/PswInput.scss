@@ -1,0 +1,13 @@
+.psw-input-view {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    input {
+        border: none;
+        font-size: $font-large;
+        width: 80%;
+        margin-left: 0.3rem;
+    }
+    input::-webkit-input-placeholder {
+        color: $hint-color;
+    }
+}

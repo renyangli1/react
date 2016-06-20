@@ -1,0 +1,127 @@
+.margin-to-top{
+    margin-top: 0.88rem;
+}
+.list {
+    overflow: hidden;
+    .title {
+        display: inline-block;
+        width: 100%;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        padding-left: 0.31rem;
+        padding-right: 0.31rem;
+        font-size: $font-media;
+        color: $secondary-color;
+        border-top: $SplitLine;
+        border-bottom: $SplitLine;
+        background-color: $back-color;
+    }
+    .title-wrap {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 0.22rem 0;
+        border-bottom: $SplitLine;
+        .picker {
+            display: inline-block;
+            width: 100%;
+            font-size: $font-large;
+            color: $primary-color;
+            .icon-down {
+                width: 0.24rem;
+                height: 0.24rem;
+            }
+        }
+        .total {
+            width: 100%;
+            font-size: $font-small;
+            color: $secondary-color;
+        }
+    }
+    .content {
+        background-color: $back-color;
+        .list-title {
+            height: 0.95rem;
+            line-height: 0.95rem;
+            padding-left: 0.31rem;
+            padding-right: 0.31rem;
+            background-color: $fore-color;
+            border-bottom: $SplitLine;
+            .time {
+                font-size: $font-small;
+                color: $primary-color;
+            }
+            .count {
+                float: right;
+                font-size: $font-small;
+                color: $secondary-color;
+                background-image: url('');
+            }
+            &.collapse+.list-item-wrap {
+                display: none;
+            }
+        }
+        .list-item {
+            position: relative;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            margin-left: 0.25rem;
+            padding-right: 0.25rem;
+            background-color: $back-color;
+            border-bottom: $SplitLine;
+            .name {
+                margin-left: 0.9rem;
+                font-size: $font-small;
+                color: $primary-color;
+                overflow: hidden;
+                display: inline-block;
+                span {
+                    display: inline-block;
+                    float: left;
+                    overflow: hidden;
+                }
+                .alias {
+                    width: 1.5rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .value {
+                float: right;
+                font-size: $font-xsmall;
+                color: $secondary-color;
+            }
+            .portrait {
+                position: absolute;
+                width: 0.7rem;
+                height: 0.7rem;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    .date-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        .date-picker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 90%;
+            height: 50%;
+            z-index: 1000;
+        }
+    }
+}

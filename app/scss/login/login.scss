@@ -1,0 +1,39 @@
+.login {
+    background-color: #02a1f2;
+    padding-left: 0.88rem;
+    padding-right: 0.88rem;
+    height: 100%;
+    .login-wrap {
+        position: relative;
+        top: 20%;
+        .input-form {
+            margin-top: 1rem;
+            .input-view {
+                background-color: $white-color;
+                border-radius: 0.12rem;
+                .account-input-view {
+                    height: 0.88rem;
+                    line-height: 0.88rem;
+                    border-bottom: $SplitLine;
+                    input {
+                        border: none;
+                        font-size: $font-large;
+                        margin-left: 0.3rem;
+                    }
+                    input::-webkit-input-placeholder {
+                        color: $hint-color;
+                    }
+                }
+            }
+            .forget-psw-text {
+                color: $white-color;
+                font-size: $font-small;
+                margin-top: 0.4rem;
+                text-align: center;
+                a{
+                	color: $white-color;
+                }
+            }
+        }
+    }
+}

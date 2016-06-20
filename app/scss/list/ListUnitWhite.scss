@@ -1,0 +1,80 @@
+.list-unit-white-ul {
+    height: 0.96rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    .unit-white-li {
+        width: 33%;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: right;
+        color: $grey-active-color;
+        &>div:nth-child(1) {
+            margin-top: 0.24rem;
+            display: block;
+            font-size: $font-xsmall;
+        }
+        &>div:nth-child(2) {
+            margin-top: 0.06rem;
+            display: block;
+            font-size: $font-small;
+            color: $brown-color;
+        }
+        .d-year,
+        .d-month {
+            text-align: left;
+        }
+        .d-year {
+            color: $blue-text-color;
+        }
+    }
+    .icon-unit-white-left {
+        width: 0.88rem;
+        line-height: 0.96rem;
+        color: $brown-color;
+        div {
+            margin-left: 0.24rem;
+            font-size: $font-large;
+            overflow: hidden;
+            height: 0.96rem;
+            span {
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                margin-top: 0.12rem;
+                margin-left: 0.12rem;
+            }
+        }
+    }
+    .icon-unit-white-right {
+        width: 0.88rem;
+        line-height: 0.96rem;
+        height: 0.96rem;
+        overflow: hidden;
+        div {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.44rem;
+            background-color: $grey-color;
+            padding: 0;
+            margin-left: 0.24rem;
+            margin-top: 0.22rem;
+            border-radius: 0.11rem;
+            span {
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                background-image: url(../img/icon_down_gray.png);
+                margin-top: 0.12rem;
+                margin-left: 0.12rem;
+            }
+        }
+        .icon-unit-white-top{
+            background-color: $brown-color;
+            span{
+                background-image: url(../img/icon_up_white.png);
+            }
+        }
+    }
+}

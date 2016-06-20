@@ -2,12 +2,15 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var vinylPaths = require('vinyl-paths');
 var reactify = require('reactify');
 var babelify = require('babelify');
-var buffer = require('buffer');
-var vinylPaths = require('vinyl-paths');
 var del = require('del');
 var revReplace = require('gulp-rev-replace');
+var proxy = require("anyproxy");
+var imagemin = require('gulp-imagemin');
+
 
 var WEB_PORT = 7000;
 var APP_DIR = 'app';
@@ -74,23 +77,23 @@ gulp.task('scss-compile-debug', function() {
  *压缩图片gulp-imagemin
  */
 gulp.task('image-debug', function() {
-    return gulp.src(APP_DIR + '/img/**/*')
+    return gulp.src(APP_DIR + '/img/**/*.{png,jpg,gif,ico}')
         .pipe($.imagemin({
-            progressive: true,
+            progressive: false,
             svgoPlugins: [{
-                removeViewBox: false
-            }],
-            /*            use: [pngquant(), gifsicle({
-                            interlaced: true
-                        })]*/
+                    removeViewBox: false
+                }]
+                /*            use: [pngquant(), gifsicle({
+                                interlaced: true
+                            })]*/
         }))
         .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('image', function() {
-    return gulp.src(APP_DIR + '/img/*')
+    return gulp.src(APP_DIR + '/img/*.{png,jpg,gif,ico}')
         .pipe($.imagemin({
-            progressive: true,
+            progressive: false,
             svgoPlugins: [{
                 removeViewBox: false
             }],
@@ -115,7 +118,7 @@ gulp.task('browserify', function() {
         .bundle()
         .on('error', errorHandler)
         .pipe(source('index.js'))
-        .pipe(gulp.dest(REV_DIR+'/js'));
+        .pipe(gulp.dest(REV_DIR + '/js'));
 });
 gulp.task('browserify-debug', function() {
     return browserify({
@@ -218,7 +221,7 @@ gulp.task('http-server-debug', function() {
         root: DIST_DIR,
         port: WEB_PORT,
         livereload: {
-            port: 35732
+            port: 35735
         }
     });
 });
@@ -257,7 +260,7 @@ gulp.task('asset-rev', function() {
  */
 gulp.task('manifest', function() {
     return gulp.src(['rev/**/*'])
-        .pipe($.manifest({
+        .pipe($.rev.manifest({
             hash: true,
             preferOnline: true,
             network: ['http://*', 'https://*', '*'],

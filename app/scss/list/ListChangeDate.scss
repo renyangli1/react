@@ -1,0 +1,60 @@
+.list-date-ul {
+    height: 0.96rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    margin-bottom:0.3rem;
+    .date-li {
+    	width: 33%;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: right;
+        color: $grey-active-color;
+        &>div:nth-child(1){
+        	margin-top: 0.24rem;
+        	display: block;
+			font-size: $font-xsmall;
+        }
+        &>div:nth-child(2){
+        	margin-top: 0.06rem;
+        	display: block;
+        	font-size: $font-large;
+        	color: $blue-text-color;
+        }
+        .d-year,.d-month{
+        	text-align: left;
+        }
+        .d-year{
+			color: $blue-text-color;
+        }
+    }
+    .icon-date-left,.icon-date-right{
+        width: 0.88rem;
+        line-height: 0.96rem;
+        overflow: hidden;
+        div {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.44rem;
+            background-color: $blue-color;
+            padding: 0;
+            margin-left: 0.24rem;
+    		margin-top: 0.22rem;
+    		border-radius: 0.11rem;
+            span {
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                background-image: url(../img/icon_previous_white.png);
+                margin-top: 0.12rem;
+                margin-left: 0.12rem;
+            }
+        }
+        .icon-date-right-div {
+        	span{
+        		background-image: url(../img/icon_next_white.png);
+        	}
+        }
+    }
+}

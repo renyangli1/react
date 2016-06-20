@@ -1,0 +1,39 @@
+.refund-confirm {
+    background-color: $back-color;
+    font-size: $font-media;
+    padding-top: $headbar-height;
+    .hidden {
+        display: none;
+    }
+    .mark-confirmed {
+        position: absolute;
+        right: 0.3rem;
+        top: 1.24rem;
+        width: 1.56rem;
+    }
+    .total-info {
+        padding: 0.3rem;
+        line-height: 0.5rem;
+        border: $SplitLine;
+        background-color: $white-color;
+        .title-text {
+            color: $secondary-color;
+        }
+        .value-text {
+            color: $primary-color;
+            margin-left: 0.25rem;
+        }
+        .refund-fee .value-text {
+            color: $blue-text-color;
+        }
+    }
+    .detail-info {
+        margin-bottom: 1rem;
+        .title-text {
+            margin-top: 0.3rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.3rem;
+            color: $secondary-color;
+        }
+    }
+}

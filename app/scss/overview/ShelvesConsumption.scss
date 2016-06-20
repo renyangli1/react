@@ -1,0 +1,25 @@
+.consumption-view {
+    width: 100%;
+    height: 0.6rem;
+    font-size: $font-small;
+    color: $fore-color;
+    background-color: $blue-color;
+    overflow: hidden;
+    line-height: 0.6rem;
+    padding: 0 0.88rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    .shelves-total-consumption {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: left;
+    }
+    .discount-amount {
+    	-webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: right;
+    }
+}

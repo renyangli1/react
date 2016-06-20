@@ -1,0 +1,198 @@
+.settlement-confirm {
+    font-size: $font-media;
+    background-color: $back-color;
+    padding-top: $headbar-height;
+    ul,
+    menu,
+    dir {
+        display: block;
+        list-style-type: none;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0px;
+    }
+    .hidden {
+        display: none;
+    }
+    .mark-confirmed {
+        position: absolute;
+        right: 0.08rem;
+        top: 0.08rem;
+        width: 2rem;
+    }
+    .round-mark {
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 0.08rem;
+        margin-top: 0.02rem;
+        position: absolute;
+        background-color: $blue-text-color;
+    }
+    .company-info {
+        padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+        line-height: 0.52rem;
+        border-bottom: $SplitLine;
+        background-color: #FFFFFF;
+        .title-text {
+            color: $secondary-color;
+        }
+        .value-text {
+            color: $primary-color;
+            margin-left: 0.25rem;
+        }
+        .main-info {
+            padding-bottom: 0.16rem;
+        }
+    }
+    .cur-settlement {
+        margin-top: 0.3rem;
+        padding-top: 0.3rem;
+        background-color: $white-color;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        .head-title {
+            padding: 0rem 0.3rem 0.2rem 0.46rem;
+            color: $secondary-color;
+        }
+        .fee {
+            border-bottom: $SplitLine;
+            margin-left: 0.46rem;
+            color: $secondary-color;
+            .fee-item {
+                padding-top: 0.17rem;
+                padding-bottom: 0.17rem;
+                padding-right: 0.1rem;
+                padding-left: 0.1rem;
+                .value-text {
+                    float: right;
+                }
+            }
+            .need-pay-view {
+                background-color: #E4F5FD;
+                border-radius: 0.04rem;
+                color: $blue-text-color;
+                .value-text {
+                    color: $blue-text-color;
+                }
+            }
+            .fee-item:last-child {
+                border-bottom: none;
+            }
+            .company-due-fee {
+                .title-text {
+                    color: #333333;
+                }
+                .value-text {
+                    color: #B13621;
+                }
+            }
+        }
+    }
+    .last-settlement {
+        padding-top: 0.3rem;
+        background-color: $white-color;
+        padding-left: 0.3rem;
+        padding-bottom: 0.3rem;
+        .head-title {
+            padding: 0rem 0.3rem 0.2rem 0.46rem;
+            color: $secondary-color;
+        }
+        .value-text {
+            float: right;
+            color: $primary-color;
+        }
+        .fee {
+            border-radius: 0.04rem;
+            margin-left: 0.46rem;
+            margin-right: 0.3rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            background-color: $light-grey-back-color;
+            .fee-item {
+                padding-top: 0.17rem;
+                padding-bottom: 0.17rem;
+            }
+            .last-inventory-fee {
+                border-bottom: $SplitLine;
+            }
+        }
+    }
+    .cur-consume-detail {
+        .head-title {
+            padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+            color: #999999;
+        }
+        .consume-list {
+            background-color: #FFFFFF;
+            padding-left: 0.3rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.2rem;
+            .li-consume {
+                padding-right: 0.3rem;
+                padding-bottom: 0.16rem;
+                padding-top: 0.16rem;
+                .shelf-name {
+                    float: right;
+                }
+                .first-view {
+                    margin-left: 0.46rem;
+                    color: $secondary-color;
+                }
+                .second-view {
+                    margin-left: 0.46rem;
+                    li {
+                        background-color: $light-grey-back-color;
+                        height: 0.6rem;
+                        line-height: 0.6rem;
+                        padding-left: 0.1rem;
+                        padding-right: 0.1rem;
+                        margin-top: 0.2rem;
+                        border-radius: 0.04rem;
+                    }
+                }
+            }
+            .li-consume:first-child {
+                padding-top: 0rem;
+            }
+            .item-fee {
+                margin-top: 0.08rem;
+                line-height: 0.4rem;
+                color: $primary-color;
+                .item-value {
+                    float: right;
+                }
+            }
+        }
+    }
+    .settlement-info {
+        margin-top: 0.3rem;
+        margin-bottom: 1rem;
+        padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+        line-height: 0.52rem;
+        border-bottom: $SplitLine;
+        background-color: #FFFFFF;
+        .title-text {
+            color: $secondary-color;
+            float: left;
+            width: 1.3rem;
+        }
+        .value-text {
+            color: $primary-color;
+            margin-left: 0.25rem;
+        }
+        .payer-info {
+            border-bottom: $BottedSplitLine;
+            padding-bottom: 0.08rem;
+            .need-invoice-view {
+                .value-text {
+                    color: $blue-text-color;
+                }
+            }
+        }
+        .receiver-info{
+            padding-top: 0.08rem;
+        }
+    }
+}

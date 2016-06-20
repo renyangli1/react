@@ -1,0 +1,56 @@
+.delivery-record {
+    position: relative;
+    height: 1.8rem;
+    margin-top: 0.3rem;
+    background-color: $fore-color;
+    overflow: hidden;
+    &>a{
+        display: block;
+        height: 100%;
+    }
+    .icon-wrap {
+        float: left;
+        padding: 0.22rem;
+        width: 0.88rem;
+        height: 100%;
+        background-position: 50% 0.22rem;
+        background-size: 0.44rem auto;
+    }
+    .detail-wrap {
+        float: left;
+        padding: 0.3rem 0;
+        height: 100%;
+        .name {
+            font-size: $font-large;
+            color: $primary-color;
+        }
+        .price {
+            display: block;
+            padding: 0.2rem 0;
+            font-size: $font-large;
+            color: $blue-text-color;
+        }
+        .time {
+            font-size: $font-small;
+            color: $secondary-color;
+        }
+    }
+    .status-wrap {
+        float: right;
+        height: 100%;
+        .status {
+            position: absolute;
+            top: 0;
+            right: 0.6rem;
+            bottom: 0;
+            margin: auto;
+        }
+        .arrow-right {
+            margin-right: 0.3rem;
+            width: 0.3rem;
+            height: 100%;
+            background-size: 0.15rem;
+            background-position: 100%;
+        }
+    }
+}

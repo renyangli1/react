@@ -1,0 +1,44 @@
+.marketingdata-chart{
+	padding-left: 0.32rem;
+	padding-right: 0.32rem;
+	margin-bottom: 0.1rem;
+	background-color: #FFFFFF;
+	.marketingdata-header{
+	    padding-top: 0.27rem;
+	    padding-bottom: 0.27rem;
+	    border-bottom: $SplitLine;
+	    font-size: $font-media;
+      line-height: 0.32rem;
+       .icon-mark{
+       	  width: 0.32rem;
+       	  height: 0.33rem;
+       	  float: left;
+       }
+       .chart-title{
+          color: $dark-grey-color;
+          margin-left: 0.28rem;
+
+       }
+       .statistic-data{
+          color: $blue-text-color;
+          margin-left: 0.10rem;
+       }
+       .detai-index{
+          float: right;
+          .checkall-index{
+            color: $light-grey-color;
+            margin-right: 0.16rem;
+            a{
+              color: $light-grey-color;
+              text-decoration: none;
+            }
+          }
+           .icon-rightarrow{
+              width: 0.10rem;
+              height: 0.20rem;
+              position: relative;
+           }
+       }
+       
+	}
+}

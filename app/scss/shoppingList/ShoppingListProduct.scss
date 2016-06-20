@@ -1,0 +1,43 @@
+.shopping-list-product{
+	background-color: $brown-color;
+	padding: 0.3rem 0;
+	.product-time{
+		font-size: $font-xsmall;
+		color: $hint-color;
+		text-indent: 0.88rem;
+		position: relative;
+		span:nth-child(1){
+			position: absolute;
+			top:0.01rem;
+			left: 0.34rem;
+			display: block;
+			width: 0.08rem;
+			height: 0.08rem;
+			border-radius: 50%;
+			background-color: $hint-color
+		}
+	}
+	.product-list{
+		font-size: $font-small;
+		color:$white-text-color;
+		margin-left: 0.88rem;
+		list-style: none;
+
+		li{
+			padding: 0.2rem 0.3rem 0.2rem 0;
+			overflow: hidden;
+			position: relative;
+			&>span{
+				display: inline-block;
+				float: right;
+			}
+			&>span:nth-child(1){
+				float: left;
+			}
+			&>span:nth-child(2){
+				position: absolute;
+				right: 1.88rem;
+			}
+		}
+	}
+}

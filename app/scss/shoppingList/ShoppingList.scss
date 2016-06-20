@@ -1,0 +1,76 @@
+.shopping-list {
+    .shopping-list-detail {
+        position: relative;
+        height: 1.6rem;
+        overflow: hidden;
+        .detail-left {
+            position: absolute;
+            top: 0.2rem;
+            left: 0.3rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .detail-right {
+            margin-left: 1.7rem;
+            margin-top: 0.3rem;
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-weight: normal;
+                font-size: $font-large;
+                color: $primary-color;
+            }
+            p {
+                margin-top: 8px;
+                font-size: $font-xsmall;
+                color: $secondary-color;
+            }
+        }
+    }
+    .company{
+        background-color: $grey-color;
+        font-size: $font-media;
+        color: $secondary-color;
+        text-indent: 0.30rem;
+        height: 0.88rem;
+        line-height: 0.88rem;
+    }
+    .shopping-list-list {
+        margin-top: 15px;
+        ol {
+            padding: 0 0.25rem;
+            li:first-child {
+                border-top: 1px solid #d9d9d9;
+            }
+            
+            li {
+                border-bottom: 1px solid #d9d9d9;
+                line-height: 0.8rem;
+                overflow: hidden;
+                span {
+                    font-size: $font-small;
+                    float: right;
+                    color: rgb(51, 51, 51);
+                }
+                .left {
+                    float: left;
+                }
+                .through {
+                    text-decoration: line-through;
+                    margin-right: 0.1rem;
+                    color: rgb(128, 128, 128);
+                }
+                .no-through {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    .shopping-list-split-line{
+        margin-left: 0.88rem;
+    }
+}

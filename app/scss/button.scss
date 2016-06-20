@@ -1,0 +1,195 @@
+button {
+    margin: 0;
+    overflow: visible;
+    line-height: normal;
+    text-rendering: optimizeLegibility;
+    vertical-align: middle;
+    -webkit-appearance: button;
+}
+
+.td-btn {
+    display: inline-block;
+    outline-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $font-large;
+    font-weight: normal;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
+     &.td-btn-xlarge {
+        height: 48px;
+        line-height: 48px;
+    }
+    &.td-btn-large {
+        height: 36px;
+        line-height: 36px;
+    }
+    &.td-btn-media {
+        height: 30px;
+        line-height: 30px;
+    }
+    &.td-btn-small {
+        height: 24px;
+        line-height: 24px;
+    }
+    &.td-btn-white {
+        color: $secondary-color;
+        background-color: $white-color;
+        border-color: #b8b8b8;
+        &:focus,
+        &:active,
+        &.td-active {
+            background-color: #d9d9d9;
+            border-color: #d9d9d9;
+        }
+        &.td-disabled,
+        &[disabled] {
+            color: #e3e3e3;
+            background-color: $white-color;
+            border-color: #e3e3e3;
+        }
+    }
+    &.td-btn-green {
+        color: $white-color;
+        background-color: $green-color;
+        border-color: $green-color;
+        &.focus,
+        &.active,
+        &.td-active {
+            color: $white-color;
+            background-color: $green-active-color;
+            border-color: $green-active-color;
+        }
+        &.td-disabled,
+        img &[disabled] {
+            color: $white-color;
+            background-color: $green-disable-color;
+            border-color: $green-disable-color;
+        }
+    }
+    &.td-btn-add {
+        background: url('../img/icon_add_gray.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 9px 9px;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: 1px solid #b9b9b9;
+        border-radius: 2px;
+        &:focus,
+        &:active,
+        &.td-active {
+            background: url('../img/icon_add_white.png');
+            background-size: cover;
+            background-color: #d9d9d9;
+        }
+        &.td-disabled,
+        &[disabled] {
+            background: url('../img/icon_add_gray.png');
+            background-size: cover;
+        }
+    }
+    &.td-btn-delete {
+        background: url('../img/icon_reduce_gray.png');
+        background-position: center;
+        background-size: 9px 9px;
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: 1px solid #b9b9b9;
+        border-radius: 2px;
+        &:focus,
+        &:active,
+        &.td-active {
+            background: url('../img/icon_reduce_white.png');
+            background-size: cover;
+            background-color: #d9d9d9;
+        }
+        &.td-disabled,
+        &[disabled] {
+            background: url('../img/icon_reduce_white.png');
+            background-size: cover;
+        }
+    }
+}
+
+.td-btn.td-no-border {
+    border: none;
+}
+
+.td-btn.td-shadow {
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.td-btn.td-disabled,
+.td-btn[disabled] {
+    pointer-events: none;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*白色*/
+
+
+/*蓝色按钮*/
+
+.td-btn-blue {
+    color: $white-color;
+    background-color: $blue-color;
+    border-color: $blue-color;
+}
+
+.td-btn-blue:focus,
+.td-btn-blue:active,
+.td-btn-blue.td-active {
+    color: $white-color;
+    background-color: $blue-active-color;
+    border-color: $blue-active-color;
+}
+
+.td-btn-blue.td-disabled,
+.td-btn-blue[disabled] {
+    color: $white-color;
+    background-color: $blue-disabled-color;
+    border-color: $blue-disabled-color;
+}
+
+/*灰色*/
+
+.xm-btn-gray {
+    color: $white-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.xm-btn-gray:focus,
+.xm-btn-gray:active,
+.xm-btn-gray.xm-active {
+    color: $white-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.xm-btn-gray.xm-disabled,
+.xm-btn-gray[disabled] {
+    color: $white-color;
+    background-color: $hint-color;
+    border-color: $hint-color;
+}

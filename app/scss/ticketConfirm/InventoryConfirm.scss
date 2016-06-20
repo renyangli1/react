@@ -1,0 +1,101 @@
+.inventory-confirm {
+    background-color: $back-color;
+    font-size: $font-media;
+    padding-top: $headbar-height;
+    .hidden {
+        display: none;
+    }
+    .mark-confirmed {
+        position: absolute;
+        right: 0.3rem;
+        top: 1.74rem;
+        width: 1.56rem;
+    }
+    .total-info {
+        padding: 0.3rem;
+        line-height: 0.5rem;
+        border: $SplitLine;
+        background-color: #FFFFFF;
+        .title-text {
+            color: $secondary-color;
+        }
+        .value-text {
+            color: $primary-color;
+            margin-left: 0.25rem;
+        }
+    }
+    .detail-info {
+        margin-top: 0.3rem;
+        .main-title-text {
+            padding-top: 0.32rem;
+            padding-left: 0.3rem;
+            padding-bottom: 0.16rem;
+            color: $secondary-color;
+            background-color: $white-color;
+        }
+        .fee-info {
+            background-color: $white-color;
+            border-bottom: $SplitLine;
+            .title-text {
+                color: $primary-color;
+            }
+            .value-text {
+                float: right;
+                color: $blue-text-color;
+            }
+            .discount-fee,
+            .already-collection-fee {
+                height: 0.6rem;
+                line-height: 0.6rem;
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+                padding-left: 0.1rem;
+                padding-right: 0.1rem;
+                background-color: $light-grey-back-color;
+                border-radius: 0.04rem;
+            }
+            .already-collection-fee {
+                margin-top: 0.2rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+        .inventory-info {
+            margin-top: 0.1rem;
+            background-color: $white-color;
+            border-top: $SplitLine;
+            .inventory-fee {
+                margin-left: 0.32rem;
+                padding-top: 0.24rem;
+                padding-right: 0.32rem;
+                padding-bottom: 0.24rem;
+                border-bottom: $SplitLine;
+                .title-text {
+                    color: $primary-color;
+                }
+                .value-text {
+                    color: $blue-text-color;
+                    float: right;
+                }
+            }
+        }
+        .inventory-products {
+            margin-bottom: 1rem;
+        }
+    }
+    .view-ensure {
+        padding:0.12rem 1rem 0.12rem 1rem;
+        background-color: $white-color;
+        position: fixed;
+            bottom: 0px;
+            width: 100%;
+        .btn-ensure {
+            height: 0.72rem;
+            background-color: $blue-color;
+            color: #FFFFFF;
+            border: none;
+            font-size: $font-large;
+            width: 100%;
+            border-radius: 0.08rem;
+        }
+    }
+}

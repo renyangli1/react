@@ -1,0 +1,40 @@
+.icon-common {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon-down {
+    @extend .icon-common;
+    background-image: url('../img/icon-down.png');
+}
+
+.icon-back {
+    @extend .icon-common;
+    background-image: url('../img/icon_big_back.png');
+}
+
+.icon-right-gray {
+    @extend .icon-common;
+    background-image: url('../img/icon-rightarrow.png');
+}
+
+.icon-down-solid {
+    @extend .icon-common;
+    background-image: url('../img/widget_title_down.png');
+}
+
+.icon-right-solid {
+    @extend .icon-common;
+    background-image: url('../img/widget_title_down.png');
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.icon-shelf {
+    @extend .icon-common;
+    background-image: url('../img/icon_shelf.png');
+}
